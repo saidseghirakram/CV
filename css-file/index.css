@@ -1,0 +1,349 @@
+:root{
+    --main-color:#f9004d;
+}
+ul{
+    list-style: none;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/PicsArt_09-13-11.04.24.jpg);
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+
+
+}
+nav{
+    position: absolute;
+    top: 20px;
+    height: 40px;
+    width: 95%;
+    margin: 0px 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav .logo{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+nav .logo span{
+    color: var(--main-color);
+    
+}
+nav .liste ul li  {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 20px;
+    
+}
+nav .liste ul li  a{
+    text-decoration: none;
+    color: white;  
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+nav .liste ul li  a:hover{
+    border-bottom: 2.5px solid var(--main-color);
+}
+
+nav .btn a{
+ 
+    top: 50%;
+ 
+   margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+    background-color: #f9004d;
+    padding: 10px ;
+    border-radius: 20px;
+}
+header .discript{
+    line-height: 1;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: white;
+}
+header .discript p:first-of-type{
+    font-weight: bold;
+    color: rgba(221, 160, 221, 0.486);
+}
+header .discript p:last-of-type{
+    font-weight: bold;
+    color: white;
+}
+header .discript h1{
+    font-size: 40px;
+}
+header .discript h1 span{
+    color: var(--main-color);
+}
+header .discript .btn {
+    margin-top: 40px;
+}
+header .discript .btn input{
+    height: 30px;
+    width: 250px;
+    border-radius: 50px;
+    padding-left: 10px;
+
+}
+header .discript .btn button{
+    height: 30px;
+    border-radius: 30px;
+    margin-left: -95px;
+    background-color: var(--main-color);
+    padding: 0 15px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    
+    nav .liste {
+        display:none;
+    }
+
+  }
+
+/* about us */
+
+.about-me{
+    height: 130vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.89);
+    position: relative;
+
+}
+.about-me .contain{
+    position: absolute;
+    width: 70%;
+    height:100vh;
+    top: 15%;
+    left: 15%;
+    display: grid;
+    grid-template-columns: 35% 50%;
+    justify-content: space-evenly;  
+}
+
+.about-me .contain .photo{
+    background-image: url(../images/photo.jpg);
+   background-size: cover;
+}
+
+.about-me .contain .text h1{
+    font-size: 40px;
+    margin-top: 50px;
+    color: white;
+}
+.about-me .contain .text p:first-of-type{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.about-me .contain .text p:first-of-type span{
+    color: var(--main-color);
+}
+.about-me .contain .text p:last-of-type{
+    color: white;
+    line-height: 2.5;
+}
+.about-me .contain .text button{
+    background-color: var(--main-color);
+    margin-top: 25px;
+    padding:10px 15px;
+    border-radius: 50px;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    
+    nav .liste {
+        display:none;
+    }
+    .about-me .contain {
+        display: block;
+       
+    }
+    .about-me .contain .photo{
+        display: block;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        margin: 0px auto;
+    }
+
+  }
+/* end about me */
+
+/* start Our service  */
+.our-service{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.our-service .title{
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    top: 80px;
+    font-weight: bold;
+
+}
+.our-service .row{
+    width: 80vw;
+    height: 70vh;
+    position: absolute;
+    top: 30vh;
+    left:10vw ;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    justify-content: space-between;
+}
+.our-service .row .col{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+        backdrop-filter: blur(10px);
+        background-color: transparent;
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        margin:0 30px;
+        margin-top: 20px;
+        border: 1px solid rgba(255,255,255,0.18);
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37) ;
+        position: relative;
+}
+.our-service .row .col h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  
+}
+.our-service .row .col p{
+    color: rgba(221, 160, 221, 0.37);
+    margin: 0 0px 30px;
+    width: 20vw;
+}
+.our-service .row .col a{
+color: white;
+text-decoration: none;
+margin-top: 30px;
+background-color: var(--main-color);
+padding: 10px 25px;
+margin-top: 15px;
+border-radius: 50px;
+}
+.our-service .row .col i{
+    
+    color: var(--main-color);
+   
+    margin: 15px 0px ;
+    font-size:40px;
+    
+}
+@media (max-width: 768px) {
+    .our-service .row{
+        display: block;
+    }
+    .our-service .row .col{
+        height: 220px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .our-service .row{
+        top: 150px;
+    }
+    .our-service .row .col p{
+        width: 90%;
+    }
+}
+/* end Our service  */
+/* start section */
+section{
+    height: 45vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.89);
+    text-align: center;
+    position: relative;
+}
+section .text{
+ padding: 50px 0px 25px 0px;
+ margin-bottom: 25px;
+ 
+}
+section .text h1{
+    color: white;
+    letter-spacing: 4px;
+    font-weight: normal;
+    height: 50px;
+}
+section .text a{
+    padding: 10px 25px ;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+   
+}
+@media (max-width: 768px) {
+    section{
+        height: 30vh;
+    }
+    section .text a{
+        margin-top: 40px
+        
+    }
+}
+/* footer */
+.section{
+    height: 45vh;
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    position: relative; 
+    color: white;
+
+}
+.section .title{
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.section .disc{
+    padding: 25px 0px;
+    color:rgba(221, 160, 221, 0.37) ;
+}
+.section .icon{
+    font-size: 30px;
+    
+}
+
+.section .icon i{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+}
+progress .prg{
+    color: #f9004d;
+    background-color: yellow;
+    border-radius: 50px;
+
+}
